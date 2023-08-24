@@ -11,13 +11,15 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import { HeadComponent } from './head/head.component';
 import {MatIconModule} from "@angular/material/icon";
 import {NgbCarouselModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { FootComponent } from './foot/foot.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PartnersComponent,
-    HeadComponent
+    HeadComponent,
+    FootComponent
   ],
   imports: [
     BrowserModule,
