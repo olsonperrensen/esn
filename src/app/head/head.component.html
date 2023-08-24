@@ -2,7 +2,7 @@
   <img width="150" src="assets/images/ESN.png" alt="Organization Logo" class="logo">
 
   <!-- Links on the left -->
-  <div class="links">
+  <div *ngIf="!isMenuOpen" class="links">
     <button routerLink="/" mat-button>Home</button>
     <button routerLink="/events" mat-button>Events</button>
     <button routerLink="/partners" mat-button>Partners</button>
@@ -19,7 +19,7 @@
     <button routerLink="/login" mat-button>Login</button>
     <button mat-icon-button><mat-icon>search</mat-icon></button>
     <button routerLink="/card" mat-icon-button><mat-icon>shopping_cart</mat-icon></button>
-    <button mat-button class="menu-button" (click)="sidenav.toggle()">
+    <button mat-button class="menu-button" (mouseover)="onSidenavClick()" (click)="onSidenavClick()">
       <mat-icon>{{ isMenuOpen ? 'menu_open' : 'menu' }}</mat-icon>
     </button>
   </div>
