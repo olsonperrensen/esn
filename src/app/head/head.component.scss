@@ -1,0 +1,17 @@
+.custom-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  gap: 10px; /* Adjust the gap as needed */
+  align-items: center;
+}
+
+.icons-and-login {
+  display: flex;
+  gap: 10px; /* Adjust the gap as needed */
+  align-items: center;
+}

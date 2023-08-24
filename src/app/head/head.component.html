@@ -1,0 +1,24 @@
+<mat-toolbar color="primary" class="custom-toolbar">
+  <img width="150" src="assets/images/ESN.png" alt="Organization Logo" class="logo">
+
+  <!-- Links on the left -->
+  <div class="links">
+    <button routerLink="/" mat-button>Home</button>
+    <button mat-button>Events</button>
+    <button routerLink="/partners" mat-button>Partners</button>
+    <button mat-button>ESNcard</button>
+    <button mat-button>About Us</button>
+    <button mat-button>Students</button>
+    <button mat-button>News</button>
+  </div>
+
+  <span class="spacer"></span> <!-- Spacer to push content to the right -->
+
+  <!-- Icons and login on the right -->
+  <div class="icons-and-login">
+    <button routerLink="/login" mat-button>Login</button>
+    <button mat-icon-button><mat-icon>search</mat-icon></button>
+    <button mat-icon-button><mat-icon>shopping_cart</mat-icon></button>
+    <button mat-icon-button><mat-icon>menu</mat-icon></button>
+  </div>
+</mat-toolbar>
