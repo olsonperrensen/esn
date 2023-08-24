@@ -1,0 +1,32 @@
+<div>
+  <div class="compartment" style="background: #fefe">
+    <ngb-carousel>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="d-block mx-auto"  src="https://fastly.picsum.photos/id/1011/900/500.jpg?hmac=twSEfoAh6FjOiVcusAReH6ZwI4CYSjT5cWeRc-vCaDE" alt="Random first slide" />
+        </div>
+        <div class="carousel-caption">
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <div class="picsum-img-wrapper">
+          <img class="d-block mx-auto" src="https://fastly.picsum.photos/id/984/900/500.jpg?hmac=5lXoZkTSzifDN1Z4RBbBcpHj8DZBmyjhNdLsp9vi3kg" alt="sec" />
+        </div>
+        <div class="carousel-caption">
+          <h3>secoisecond</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+  <div class="image-grid compartment">
+    <div *ngFor="let image of images" class="grid-item">
+      <img [src]="image.url" alt="Image">
+      <div class="grid-overlay">
+        <span [routerLink]="image.title">{{ image.title }}</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -10,6 +10,7 @@ import {MatButtonModule} from "@angular/material/button";
 import {MatToolbarModule} from "@angular/material/toolbar";
 import { HeadComponent } from './head/head.component';
 import {MatIconModule} from "@angular/material/icon";
+import {NgbCarouselModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,9 @@ import {MatIconModule} from "@angular/material/icon";
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    NgbModule,
+    NgbCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
