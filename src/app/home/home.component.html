@@ -25,7 +25,7 @@
     <div *ngFor="let image of images" class="grid-item">
       <img [src]="image.url" alt="Image">
       <div class="grid-overlay">
-        <span [routerLink]="image.title">{{ image.title }}</span>
+        <span [routerLink]="image.title | lowercase">{{ image.title }}</span>
       </div>
     </div>
   </div>

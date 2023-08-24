@@ -12,6 +12,7 @@ import { HeadComponent } from './head/head.component';
 import {MatIconModule} from "@angular/material/icon";
 import {NgbCarouselModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FootComponent } from './foot/foot.component';
+import { StudentsComponent } from './students/students.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FootComponent } from './foot/foot.component';
     HomeComponent,
     PartnersComponent,
     HeadComponent,
-    FootComponent
+    FootComponent,
+    StudentsComponent
   ],
   imports: [
     BrowserModule,
