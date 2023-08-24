@@ -19,6 +19,25 @@
     <button routerLink="/login" mat-button>Login</button>
     <button mat-icon-button><mat-icon>search</mat-icon></button>
     <button routerLink="/card" mat-icon-button><mat-icon>shopping_cart</mat-icon></button>
-    <button mat-icon-button><mat-icon>menu</mat-icon></button>
+    <button mat-button class="menu-button" (click)="sidenav.toggle()">
+      <mat-icon>{{ isMenuOpen ? 'menu_open' : 'menu' }}</mat-icon>
+    </button>
   </div>
 </mat-toolbar>
+<mat-sidenav-container style="background:none" class="sidenav-container">
+  <mat-sidenav #sidenav autoFocus="false" mode="over" [(opened)]="isMenuOpen" class="sidenav"
+               (click)="onSidenavClick()">
+    <a routerLink="/" mat-button>Home</a>
+    <a  routerLink="/events" mat-button>Events</a>
+    <a  routerLink="/partners" mat-button>Partners</a>
+    <a  routerLink="/card" mat-button>ESNcard</a>
+    <a  routerLink="/about" mat-button>About Us</a>
+    <a  routerLink="/students" mat-button>Students</a>
+    <a  routerLink="/blog" mat-button>Blog</a>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <main>
+      <router-outlet></router-outlet>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>

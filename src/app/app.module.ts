@@ -13,6 +13,7 @@ import {MatIconModule} from "@angular/material/icon";
 import {NgbCarouselModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FootComponent } from './foot/foot.component';
 import { StudentsComponent } from './students/students.component';
+import {MatSidenavModule} from "@angular/material/sidenav";
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { StudentsComponent } from './students/students.component';
     MatToolbarModule,
     MatButtonModule,
     MatIconModule,
+    MatSidenavModule,
     NgbModule,
     NgbCarouselModule,
   ],

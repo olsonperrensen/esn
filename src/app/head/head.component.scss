@@ -1,1 +1,54 @@
 .custom-toolbar {   display: flex;   justify-content: space-between;   align-items: center; }  .links {   display: flex;   gap: 10px; /* Adjust the gap as needed */   align-items: center; }  .icons-and-login {   display: flex;   gap: 10px; /* Adjust the gap as needed */   align-items: center; }  /* Responsive styles */ @media (max-width: 768px) { /* For devices with width less than or equal to 768px */   .logo {     width: 100px; /* Scale down the logo on smaller screens */   } }  @media (max-width: 768px) {   .links {     display: none; /* Hide the links on smaller screens */   }    .icons-and-login {     gap: 5px; /* Reduce the gap to avoid cramping */   } }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  background: none;
+  color: #fff;
+
+  padding: 18px 24px;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: space-between;
+
+  .menu-button {
+    margin-right: 24px;
+    min-width: 0;
+    padding: 0;
+    line-height: normal;
+  }
+
+  button {
+    float: left;
+  }
+
+  span {
+    float: right;
+    background-color: rgba($color: #ffffff, $alpha: 0.3);
+  }
+}
+
+.sidenav-container {
+  flex: 1;
+
+  .sidenav {
+    min-width: 240px;
+
+    a {
+      display: block;
+      padding: 6px 24px;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  main {
+    padding: 18px 24px;
+
+  }
+}
