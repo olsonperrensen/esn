@@ -1,17 +1,1 @@
-.custom-toolbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.links {
-  display: flex;
-  gap: 10px; /* Adjust the gap as needed */
-  align-items: center;
-}
-
-.icons-and-login {
-  display: flex;
-  gap: 10px; /* Adjust the gap as needed */
-  align-items: center;
-}
+.custom-toolbar {   display: flex;   justify-content: space-between;   align-items: center; }  .links {   display: flex;   gap: 10px; /* Adjust the gap as needed */   align-items: center; }  .icons-and-login {   display: flex;   gap: 10px; /* Adjust the gap as needed */   align-items: center; }  /* Responsive styles */ @media (max-width: 768px) { /* For devices with width less than or equal to 768px */   .logo {     width: 100px; /* Scale down the logo on smaller screens */   } }  @media (max-width: 768px) {   .links {     display: none; /* Hide the links on smaller screens */   }    .icons-and-login {     gap: 5px; /* Reduce the gap to avoid cramping */   } }
