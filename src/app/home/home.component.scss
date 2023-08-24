@@ -36,3 +36,26 @@
 {
   margin: 20px
 }
+/* Responsive styles for the carousel */
+.picsum-img-wrapper img {
+  width: 100%; /* Ensure the carousel images are responsive */
+  height: auto;
+}
+
+.carousel-caption {
+  /* Adjust positioning and size of the captions for better mobile presentation */
+  bottom: 10%;
+  left: 5%;
+  right: 5%;
+  text-align: left;
+  max-width: 70%;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h3 {
+    font-size: 1.2rem; /* Reduce font size on smaller screens */
+  }
+  .carousel-caption p {
+    font-size: 0.9rem; /* Reduce font size on smaller screens */
+  }
+}
