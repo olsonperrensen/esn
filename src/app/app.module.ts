@@ -14,6 +14,7 @@ import {NgbCarouselModule, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FootComponent } from './foot/foot.component';
 import { StudentsComponent } from './students/students.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
+import { EventsComponent } from './events/events.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {MatSidenavModule} from "@angular/material/sidenav";
     PartnersComponent,
     HeadComponent,
     FootComponent,
-    StudentsComponent
+    StudentsComponent,
+    EventsComponent
   ],
   imports: [
     BrowserModule,
